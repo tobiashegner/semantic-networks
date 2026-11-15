@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Networks</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+    h1 { color: #2b4c7e; }
+    h2 { color: #2b4c7e; margin-top: 2rem; }
+    .box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    footer { margin-top: 3rem; font-size: 0.9rem; color: #777; }
+  </style>
+</head>
+<body>
+
+  <h1>Semantic Networks</h1>
+  <p>Ein <strong>semantisches Netz</strong> stellt Wissen als Netzwerk dar:
+     Begriffe sind <em>Knoten</em>, und die Beziehungen zwischen ihnen sind <em>Kanten</em>.</p>
+
+  <h2>Ein einfaches Beispiel</h2>
+  <svg viewBox="0 0 400 220" width="100%" class="box" role="img" aria-label="Beispiel eines semantischen Netzes">
+    <line x1="200" y1="40" x2="100" y2="170" stroke="#999" />
+    <line x1="200" y1="40" x2="300" y2="170" stroke="#999" />
+    <text x="120" y="100" font-size="12" fill="#555">ist ein</text>
+    <text x="255" y="100" font-size="12" fill="#555">ist ein</text>
+    <circle cx="200" cy="40" r="30" fill="#2b4c7e" />
+    <text x="200" y="45" font-size="13" fill="#fff" text-anchor="middle">Tier</text>
+    <circle cx="100" cy="170" r="30" fill="#4a7bc4" />
+    <text x="100" y="175" font-size="13" fill="#fff" text-anchor="middle">Vogel</text>
+    <circle cx="300" cy="170" r="30" fill="#4a7bc4" />
+    <text x="300" y="175" font-size="13" fill="#fff" text-anchor="middle">Fisch</text>
+  </svg>
+
+  <h2>Typische Beziehungen</h2>
+  <ul>
+    <li><strong>ist ein</strong> – Ein Vogel <em>ist ein</em> Tier.</li>
+    <li><strong>hat</strong> – Ein Vogel <em>hat</em> Flügel.</li>
+    <li><strong>kann</strong> – Ein Vogel <em>kann</em> fliegen.</li>
+  </ul>
+
+  <h2>Wo werden sie genutzt?</h2>
+  <ul>
+    <li>Künstliche Intelligenz und Wissensdarstellung</li>
+    <li>Suchmaschinen und Knowledge Graphs</li>
+    <li>Sprachverarbeitung</li>
+  </ul>
+
+  <footer>Erstellt als Testseite für GitHub Pages.</footer>
+
+</body>
+</html>
